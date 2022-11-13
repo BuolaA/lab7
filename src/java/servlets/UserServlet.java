@@ -50,7 +50,7 @@ public class UserServlet extends HttpServlet {
         }
         
         try {
-            List<User> users = us.getAll();
+            List<ca.sait.models.User> users = us.getAll();
             
             request.setAttribute("users", users);
         } catch(Exception e)  {
@@ -110,7 +110,7 @@ public class UserServlet extends HttpServlet {
         }
         
          try {
-            List<User> users = us.getAll();
+            List<ca.sait.models.User> users = us.getAll();
 
             request.setAttribute("users", users);
         } catch(Exception e)  {
